@@ -37,9 +37,11 @@ a.brand-logo img {
 .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  border-radius: 5px;
 }
 
-a.my-btn, button.my-btn {
+a.my-btn,
+button.my-btn {
   color: white !important;
   background-color: black !important;
   padding: 10px;
@@ -48,10 +50,12 @@ a.my-btn, button.my-btn {
   font-weight: 700;
   text-transform: uppercase;
   font-size: .8rem;
-  transition: all .2s ease-in-out;
+  transition: all .1s ease-in-out;
+  border-radius: 5px;
 }
 
-a.my-btn:hover, button.my-btn:hover {
+a.my-btn:hover,
+button.my-btn:hover {
   color: black !important;
   background-color: transparent !important;
   cursor: pointer;
@@ -78,8 +82,10 @@ a.my-btn.white:hover {
   CARD
 *******/
 
-.card, .card-panel {
+.card,
+.card-panel {
   box-shadow: none;
+  border-radius: 10px;
 }
 
 .card-title {
@@ -90,9 +96,14 @@ a.my-btn.white:hover {
   FULL CARD
 ************/
 
+div.card.full {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 div.card.full div.card-content {
   padding: 0;
-  height: 500px;
+  height: 300px;
 }
 
 div.card-header {
@@ -143,6 +154,17 @@ div.card-header h4 {
   width: 100%;
 }
 
+/*************
+  INTRO CARD
+*************/
+
+#intro-card {
+  background-image: url(../images/logos/logo-almost-beige.png);
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
 /*********
   FIGURE
 *********/
@@ -171,6 +193,10 @@ figcaption {
 *********/
 
 footer.page-footer {
+  background-image: url(../images/logos/logo-almost-beige.png);
+  background-size: 20vh;
+  background-repeat: no-repeat;
+  background-position: center;
   color: black;
   background-color: white;
   padding-top: 5vh;
@@ -203,17 +229,18 @@ footer .footer-copyright {
 *******/
 
 /* input color */
-input, textarea {
+input,
+textarea {
   color: black;
 }
 
 /* label color */
 .input-field label {
-  color: rgb(158,158,158) !important;
+  color: rgb(158, 158, 158) !important;
 }
 
 /* label focus color */
-.input-field input:focus + label, 
+.input-field input:focus + label,
 .input-field textarea:focus + label {
   color: #000 !important;
 }
@@ -257,7 +284,7 @@ input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #000 !important;
   -webkit-box-shadow: 0 1px 0 0 #000;
-          box-shadow: 0 1px 0 0 #000;
+  box-shadow: 0 1px 0 0 #000;
 }
 
 /*********
@@ -446,33 +473,30 @@ nav li.active {
 }
 
 /* Project Changer */
-.bcom-music div.col {
+.work-footer div.col {
   height: 300px;
 }
 
-.bcom-music .col .valign-wrapper {
+.work-footer .col .valign-wrapper {
   height: 100%;
 }
 
-.bcom-music .col.hide-on-med-and-down .valign-wrapper {
+.work-footer .col.hide-on-med-and-down .valign-wrapper {
   justify-content: center;
 }
 
-.bcom-music {
+.work-footer {
   color: white;
-  background-image: url(../images/urbanfloraep-2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #666;
   padding-bottom: 1px;
 }
 
-.bcom-music a {
+.work-footer a {
   color: white;
   transition: .2s ease-in-out all;
 }
 
-.bcom-music a:hover {
+.work-footer a:hover {
   color: #999 !important;
   cursor: pointer;
 }
@@ -485,17 +509,18 @@ nav li.active {
   margin-bottom: 10vh;
 }
 
-@media only screen and (max-width: 600px) {
-}
+@media only screen and (max-width: 600px) {}
 
 @media only screen and (min-width: 601px) {
   #who-interests-content div.row {
     display: flex;
   }
+
   #who-interests-content div.row:nth-child(even) {
     flex-direction: row-reverse;
     text-align: right;
   }
+
   #who-interests-content div.col {
     margin-top: auto;
     margin-bottom: auto;
