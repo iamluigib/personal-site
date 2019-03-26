@@ -1,0 +1,503 @@
+/*************
+  FONT SETUP
+*************/
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 750;
+}
+
+a.brand-logo img {
+  padding: 7px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/*********
+  BUTTON
+*********/
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+a.my-btn, button.my-btn {
+  color: white !important;
+  background-color: black !important;
+  padding: 10px;
+  border: 2px solid black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8rem;
+  transition: all .2s ease-in-out;
+}
+
+a.my-btn:hover, button.my-btn:hover {
+  color: black !important;
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
+a.my-btn.white {
+  color: black !important;
+  background-color: white !important;
+  padding: 10px;
+  border: 2px solid white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+a.my-btn.white:hover {
+  color: white !important;
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
+/*******
+  CARD
+*******/
+
+.card, .card-panel {
+  box-shadow: none;
+}
+
+.card-title {
+  font-weight: 750 !important;
+}
+
+/************
+  FULL CARD
+************/
+
+div.card.full div.card-content {
+  padding: 0;
+  height: 500px;
+}
+
+div.card-header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-radius: 0px;
+}
+
+div.card-header div.card-header-tint {
+  display: flex;
+  border-radius: 0px;
+}
+
+div.card-header div.card-header-tint div.card-header-content {
+  width: 100%;
+  align-self: flex-end;
+  text-align: left;
+  padding: 20px;
+  margin: auto;
+}
+
+div.card-header div.card-header-tint div.card-header-content h4 {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+div.card-header h4 {
+  color: white;
+  font-size: 2rem;
+}
+
+.card-header-tint {
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.55);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(0, 0, 0), 0.4, rgba(0, 0, 0, 0));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  /* Standard syntax */
+  height: 100%;
+  width: 100%;
+}
+
+/*********
+  FIGURE
+*********/
+
+figure img.hoverable {
+  -webkit-transition: .2s ease-in-out all;
+  transition: .2s ease-in-out all;
+}
+
+figure img.hoverable:hover {
+  -ms-transform: translate(0px, -5px);
+  /* IE 9 */
+  -webkit-transform: translate(0px, -5px);
+  /* Safari */
+  transform: translate(0px, -5px);
+}
+
+figcaption {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+/*********
+  FOOTER
+*********/
+
+footer.page-footer {
+  color: black;
+  background-color: white;
+  padding-top: 5vh;
+}
+
+footer .col .valign-wrapper.center {
+  justify-content: center;
+}
+
+footer.page-footer a {
+  color: black;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: .2s ease-in-out all;
+}
+
+footer.page-footer a:hover {
+  color: grey !important;
+  cursor: pointer;
+}
+
+footer .footer-copyright {
+  margin-top: 5vh;
+  color: grey !important;
+  background-color: white !important;
+}
+
+/*******
+  FORM
+*******/
+
+/* input color */
+input, textarea {
+  color: black;
+}
+
+/* label color */
+.input-field label {
+  color: rgb(158,158,158) !important;
+}
+
+/* label focus color */
+.input-field input:focus + label, 
+.input-field textarea:focus + label {
+  color: #000 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000 !important;
+  box-shadow: 0 1px 0 0 #000 !important;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #0f0 !important;
+  box-shadow: 0 1px 0 0 #0f0 !important;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #f00 !important;
+  box-shadow: 0 1px 0 0 #f00 !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000 !important;
+}
+
+/* textarea underline focus color */
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #000 !important;
+  -webkit-box-shadow: 0 1px 0 0 #000;
+          box-shadow: 0 1px 0 0 #000;
+}
+
+/*********
+  NAVBAR
+*********/
+
+nav {
+  box-shadow: none;
+  background: transparent;
+}
+
+nav div.nav-wrapper a.brand-logo {
+  height: auto;
+  color: #666;
+}
+
+@media only screen and (min-width: 993px) {
+  nav#navbar div.nav-wrapper a.brand-logo {
+    margin-left: 10px;
+  }
+}
+
+nav a.brand-logo img {
+  height: 50px;
+  margin: 3.5px;
+}
+
+nav ul a {
+  color: black;
+  font-weight: 700;
+  transition: ease .4s all;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: underline;
+}
+
+nav a.sidenav-trigger {
+  color: #666666;
+}
+
+nav a.btn:hover {
+  text-decoration: none;
+}
+
+nav li.active {
+  background-color: transparent !important;
+  text-decoration: underline;
+}
+
+/**********
+  SPACERS
+**********/
+
+.spacer-sm {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.spacer-top-sm {
+  padding-top: 5vh;
+}
+
+.spacer-bottom-sm {
+  padding-bottom: 5vh;
+}
+
+.spacer-md {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.spacer-top-md {
+  padding-top: 10vh;
+}
+
+.spacer-bottom-md {
+  padding-bottom: 10vh;
+}
+
+.spacer-lg {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
+.spacer-top-lg {
+  padding-top: 15vh;
+}
+
+.spacer-bottom-lg {
+  padding-bottom: 15vh;
+}
+
+/***************
+  LANDING PAGE
+***************/
+
+.site-banner {
+  margin: 0 65px;
+}
+
+.site-banner .valign-wrapper {
+  height: 85vh;
+}
+
+.site-banner h1 {
+  margin: auto;
+  font-weight: 800;
+  font-size: 6rem;
+}
+
+#arrow-down {
+  height: 15vh;
+}
+
+/* move arrow up slightly on phones and tablets */
+@media only screen and (max-width: 992px) {
+  #arrow-down {
+    position: relative;
+    bottom: 5vh;
+  }
+}
+
+#arrow-down i {
+  font-size: 3rem;
+}
+
+#arrow-down p {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*********
+  CLIENT
+*********/
+
+#client-intro {
+  margin: 14vh 0;
+}
+
+#client-intro h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .75rem;
+}
+
+#client-intro li {
+  font-weight: 300;
+}
+
+#client-hero-image {
+  width: 100%;
+}
+
+#client-idea {
+  margin: 7vh 0;
+}
+
+#client-showcase {
+  padding: 5vh 0;
+}
+
+#client-showcase .row {
+  padding: 5vh 0;
+}
+
+/* Project Changer */
+.bcom-music div.col {
+  height: 300px;
+}
+
+.bcom-music .col .valign-wrapper {
+  height: 100%;
+}
+
+.bcom-music .col.hide-on-med-and-down .valign-wrapper {
+  justify-content: center;
+}
+
+.bcom-music {
+  color: white;
+  background-image: url(../images/urbanfloraep-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 1px;
+}
+
+.bcom-music a {
+  color: white;
+  transition: .2s ease-in-out all;
+}
+
+.bcom-music a:hover {
+  color: #999 !important;
+  cursor: pointer;
+}
+
+/******************
+  ABOUT INTERESTS
+******************/
+
+#who-interests-content {
+  margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 601px) {
+  #who-interests-content div.row {
+    display: flex;
+  }
+  #who-interests-content div.row:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  #who-interests-content div.col {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
