@@ -54,6 +54,7 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-135631416-1');
+
   </script>
 
 </head>
@@ -67,7 +68,7 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="about.html">Who</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="#footer" class="btn black white-text z-depth-0">Contact</a></li>
+        <li><a href="#footer" class="btn blue white-text z-depth-0">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -75,24 +76,24 @@
   <ul class="sidenav" id="mobile-demo">
     <li><a href="about.html">Who</a></li>
     <li><a href="work.html">Work</a></li>
-    <li><a href="#footer" class="btn black white-text z-depth-0">Contact</a></li>
+    <li><a href="#footer" class="btn blue white-text z-depth-0">Contact</a></li>
   </ul>
 
-  <main>
+  <main id="swup" class="transition-fade">
 
     <div class="container">
       <div class="row spacer-sm">
         <div class="col s12 m10 l8 xl6">
-          <h3>I make aesthetically pleasing things on the internet<span class="blue-text text-accent-3">.</span></h3>
+          <h3>I design aesthetically pleasing things on the internet<span class="blue-text text-accent-3">.</span></h3>
         </div>
       </div>
-    </div>
 
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/designer-working.jpg" alt="designer working"></div>
-    </div>
+      <div class="row">
+        <div class="col s12">
+          <img src="images/minimal-desk.jpg" alt="designer working" class="responsive-img rounded-corners">
+        </div>
+      </div>
 
-    <div class="container">
       <div class="row spacer-top-sm">
         <div class="col s12">
           <h3 class="center-align">What I Design</h3>
@@ -103,7 +104,7 @@
           <div class="card small orange lighten-5 center-align" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <div class="card-content">
               <p><i class="material-icons medium">computer</i></p>
-              <span class="card-title">Websites</span>
+              <span class="card-title">UX</span>
               <p>My goal is to make every website I design to look and feel as good as possible. From UX to UI, I'm your one stop shop. But most of all, I make sure it's something you love.</p>
             </div>
           </div>
@@ -126,12 +127,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="row spacer-sm">
-      <div class="col s12 m8 offset-m2">
-        <img src="images/material-landscape.jpg" alt="workspace" class="responsive-img materialboxed" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       </div>
     </div>
 
@@ -259,7 +254,7 @@
           </div>
           <div class="row">
             <div class="col s12 center-align">
-              <button class="btn btn-large waves-effect waves-light black z-depth-0 modal-trigger" type="submit" name="action" href="#messageSent">Send Message<i class="material-icons right">send</i></button>
+              <button class="btn btn-large waves-effect waves-light blue z-depth-0 modal-trigger" type="submit" name="action" href="#messageSent">Send Message<i class="material-icons right">send</i></button>
             </div>
           </div>
         </form>
@@ -292,5 +287,12 @@
   <script src="js/aos.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="swup/dist/swup.js"></script>
+  <script>
+    const swup = new Swup();
 
-</body></html>
+  </script>
+
+</body>
+
+</html>

@@ -92,6 +92,21 @@ a.my-btn.white:hover {
   font-weight: 750 !important;
 }
 
+.card-image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-action {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  overflow: hidden;
+}
+
+.card-action a {
+  color: dodgerblue !important;
+}
+
 /************
   FULL CARD
 ************/
@@ -154,15 +169,13 @@ div.card-header h4 {
   width: 100%;
 }
 
-/*************
-  INTRO CARD
-*************/
+/******************
+  ROUNDED CORNERS
+******************/
 
-#intro-card {
-  background-image: url(../images/logos/logo-almost-beige.png);
-  background-size: contain;
-  background-position: center right;
-  background-repeat: no-repeat;
+.rounded-corners {
+  border-radius: 10px !important;
+  overflow: hidden;
 }
 
 /*********
@@ -542,4 +555,17 @@ nav li.active {
     margin-top: auto;
     margin-bottom: auto;
   }
+}
+
+/*******
+  SWUP
+*******/
+
+.transition-fade {
+  transition: .25s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }
