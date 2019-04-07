@@ -1,5 +1,4 @@
 M.AutoInit();
-AOS.init();
 
 $(document).ready(function () {
   $('textarea#textarea').characterCounter();
