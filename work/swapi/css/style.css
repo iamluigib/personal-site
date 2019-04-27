@@ -1,0 +1,60 @@
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800 !important;
+}
+
+
+h4,
+h5,
+span.card-title {
+  font-weight: 700 !important;
+}
+
+h6 {
+  font-weight: 200 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#welcome-section {
+  color: white;
+  background: linear-gradient(to bottom right, rgb(100, 201, 202), rgb(182, 47, 246));
+}
+
+#welcome-section .row,
+#welcome-section .col {
+  height: 100vh;
+}
+
+#projects {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#contact {
+  color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: linear-gradient(to top right, rgb(100, 201, 202), rgb(182, 47, 246));
+}
+
+.hide-me {
+  display: none;
+}
+
+.card,
+.card-panel {
+  border-radius: 20px;
+  overflow: hidden;
+}
